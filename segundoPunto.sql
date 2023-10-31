@@ -35,7 +35,7 @@ CREATE TABLE if NOT EXISTS inventario(
     id_inventario INT
 );
 
-
+-- AGREGANDO ENTIDADES--
 ALTER TABLE cliente ADD nombre VARCHAR(80) NOT NULL, ADD apellido VARCHAR(50) NOT NULL,
     ADD telefono VARCHAR(20) NOT NULL,
     ADD email VARCHAR(50) NOT NULL,
@@ -76,5 +76,17 @@ ADD fecha DATETIME NOT NULL;
 ALTER TABLE inventario ADD producto_id BIGINT NOT NULL,
 ADD cantidad DOUBLE(8, 2) NOT NULL,
 ADD provedorID BIGINT NOT NULL;
+
+-- AGREGANDO PRIMARY KEYS--
+
+ALTER TABLE cliente ADD PRIMARY KEY (cliente_id);
+ALTER TABLE pedido ADD PRIMARY KEY (pedido_id);
+ALTER TABLE producto ADD PRIMARY KEY (id_producto);
+ALTER TABLE estado_pedido ADD PRIMARY KEY (id_estadoP);
+ALTER TABLE metodo_pago ADD PRIMARY KEY (id_metodoPago);
+ALTER TABLE factura ADD PRIMARY KEY (id_factura);
+ALTER TABLE proveedor ADD PRIMARY KEY (id_proveedor);
+ALTER TABLE pedidos_pendientes ADD PRIMARY KEY (id_pedidos);
+ALTER TABLE inventario ADD PRIMARY KEY (id_inventario);
 
 show TABLES;  
