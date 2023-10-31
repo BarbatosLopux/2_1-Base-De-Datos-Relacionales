@@ -89,4 +89,8 @@ ALTER TABLE proveedor ADD PRIMARY KEY (id_proveedor);
 ALTER TABLE pedidos_pendientes ADD PRIMARY KEY (id_pedidos);
 ALTER TABLE inventario ADD PRIMARY KEY (id_inventario);
 
+-- AGREGANDO CLAVES UNICAS 
+
+ALTER TABLE cliente ADD CONSTRAINT clienteIdentificacionUnique UNIQUE(identificacion);
+ALTER TABLE proveedor ADD CONSTRAINT proveedorNombreUnuque UNIQUE(nombre);
 show TABLES;  
