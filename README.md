@@ -1,9 +1,9 @@
-# EJERCICIO 2_1 Base de datos relacionales-Ejercicio uno 
+# EJERCICIO 2_1 Base de datos relacionales-Ejercicio dos 
 En este Readme contiene la informacion pertinente del ejercicio de base de datos
 ## Que contiene este repositorio? 
 El repositorio contendra la informacion pertinente de los modelos utilizados para la realizacion de este proyecto, ademas de poseer un readme con toda la informacion pertinente de la base de datos expuesta
 
-* Contiene la infomacion del sql llamado `PrimerPunto.sql` en el que a partir de este se realizo un diagrama fisico que se expondra en los siguientes puestos de informacion.
+* Contiene la infomacion del sql llamado `segundoPunto.sql` en el que a partir de este se realizo un diagrama fisico que se expondra en los siguientes puestos de informacion.
 
 ### Los modelos a trabajar son:
 
@@ -19,33 +19,38 @@ A partir de la logica enunciada en el cual se planteara el problema a solucionar
 A partir de la infomacion planteada generamos un modelo fisico conteniendo las entidades y atributos de cada tabla.
 ### Modelo conceptual 
  
-1. Stock: 
-   - id_stock (identificador del stock) 
+1. cliente: 
+   - id_cliente (identificador del cliente) 
  
-2. Libros: 
-   - id_libro (identificador del libro) 
+2. pedido: 
+   - id_pedido (identificador del pedido) 
  
-3. Editores: 
-   - id_editor (identificador del editor) 
+3. producto: 
+   - id_producto (identificador del producto) 
  
-4. Almacenes: 
-   - id_almacen (identificador del almacén) 
+4. pagos: 
+   - id_pagos (identificador de los pagos) 
  
-5. Facturación: 
-   - id_facturacion (identificador de la facturación) 
+5. estado_pedido: 
+   - id_estadoPedido (identificador del estado del pedido) 
  
-6. Clientes: 
-   - id_clientes (identificador del cliente) 
+6. metodo_pago: 
+   - id_metodoPago (identificador del metodo de pago) 
  
-7. Carrito: 
-   - shopping_cart_ID (identificador del carrito de compras) 
+7. factura: 
+   - id_factira (identificador de la factura) 
  
-8. Autor: 
-   - id_autor (identificador del autor) 
+8. proveedor: 
+   - id_proveedor (identificador del proveedor) 
+
+9. pedidos_pendientes: 
+   - id_pedidos (identificador de los pedidos pendientes) 
+10. inventario:
+   - id_inventario (identificador del inventario)
  
 Este modelo conceptual muestra las entidades principales y sus respectivos identificadores en el contexto de un negocio de alquiler y venta de libros. 
 
 ### Modelo Fisico 
 Este modelo físico representa la estructura de la base de datos, mostrando las tablas, sus relaciones y los atributos clave que las componen
 
-![imagenModeloFisico](./images/ejercicio1.png)
+![imagenModeloFisico](./images/punto2.png)
