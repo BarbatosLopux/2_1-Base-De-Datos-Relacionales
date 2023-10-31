@@ -64,8 +64,16 @@ ALTER TABLE clientes ADD PRIMARY KEY (id_clientes);
 ALTER TABLE carrito ADD PRIMARY KEY (shopping_cart_ID);
 ALTER TABLE autor ADD PRIMARY KEY (id_autor)
 
+--AÑADIR ClaveUnica--
+ALTER TABLE stock ADD CONSTRAINT stockCodigoAlmacenUnique UNIQUE(codigo_almacen);
+
+ALTER TABLE Libros ADD CONSTRAINT libro_titulo_unique UNIQUE(titulo);
+ALTER TABLE Libros ADD CONSTRAINT libro_isbn_unique UNIQUE(ISBN);
+ALTER TABLE Editores ADD CONSTRAINT editores_url_unique UNIQUE(URL);
+ALTER TABLE Almacenes ADD CONSTRAINT almacenes_codigo_unique UNIQUE(codigo);
+ALTER TABLE autor ADD CONSTRAINT autor_url_unique UNIQUE(URL); 
 
 
 use 2_1DATOSDEBASEprimerPunto;
-describe autor;
+describe Libros;
 show tables; 
