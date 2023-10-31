@@ -48,4 +48,4 @@ Este modelo conceptual muestra las entidades principales y sus respectivos ident
 ### Modelo Fisico 
 Este modelo físico representa la estructura de la base de datos, mostrando las tablas, sus relaciones y los atributos clave que las componen
 
-![imagenModeloFisico](/images/ejercicio1.pnG)
+![imagenModeloFisico](./images/ejercicio1.png)
