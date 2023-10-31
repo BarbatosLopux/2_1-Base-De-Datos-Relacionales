@@ -52,3 +52,20 @@ ALTER TABLE clientes ADD nombre VARCHAR(100) NOT NULL, ADD direccion VARCHAR(80)
 ALTER TABLE carrito ADD cantidad_libros INT NOT NULL, ADD ISBN_ID VARCHAR(20) NOT NULL, ADD copias_libro INT NOT NULL, ADD id_libro INT NOT NULL; 
 
 ALTER TABLE autor ADD nombre VARCHAR(80) NOT NULL, ADD apellido VARCHAR(50) NOT NULL, ADD direccion VARCHAR(50) NOT NULL, ADD URL VARCHAR(80) NOT NULL;
+
+--*Añadir clave primaria--*>
+
+ALTER TABLE stock ADD PRIMARY KEY (id_stock);
+ALTER TABLE Libros ADD PRIMARY KEY (id_libro);
+ALTER TABLE Editores ADD PRIMARY KEY (id_editor);
+ALTER TABLE Almacenes ADD PRIMARY KEY (id_almacen);
+ALTER TABLE facturacion ADD PRIMARY KEY (id_facturacion);
+ALTER TABLE clientes ADD PRIMARY KEY (id_clientes);
+ALTER TABLE carrito ADD PRIMARY KEY (shopping_cart_ID);
+ALTER TABLE autor ADD PRIMARY KEY (id_autor)
+
+
+
+use 2_1DATOSDEBASEprimerPunto;
+describe autor;
+show tables; 
